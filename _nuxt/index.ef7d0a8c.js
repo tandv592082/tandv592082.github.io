@@ -1,1 +1,0 @@
-import{i as o,b as t,r as s,o as n}from"./entry.fcff10ba.js";const r={},c={class:"container mx-auto"};function a(e,_){return n(),t("div",c,[s(e.$slots,"default")])}const i=o(r,[["render",a]]);export{i as default};

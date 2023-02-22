@@ -9,7 +9,7 @@ const CVContactInfo = resolveComponent('CVContactInfo');
 
 <template>
     <div>
-        <p class="text-center text-xl">Tan Duong Van</p>
+        <p class="text-center text-xl">Tan Duong Van 1121</p>
         <p class="text-center">Backend Engineer</p>
     </div>
     <div class="w-full flex justify-center">

@@ -5,10 +5,12 @@
     "dev": "nuxt dev",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
-    "postinstall": "nuxt prepare"
+    "postinstall": "nuxt prepare",
+    "deploy": "gh-pages --dotfiles -d .output/public"
   },
   "devDependencies": {
     "@nuxtjs/i18n": "^8.0.0-beta.10",
+    "gh-pages": "^5.0.0",
     "nuxt": "^3.2.2"
   },
   "dependencies": {

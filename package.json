@@ -10,9 +10,13 @@
     "ghGenerateAndDeploy": "node deploy/ghPagesDeploy.mjs"
   },
   "devDependencies": {
+    "@headlessui/vue": "^1.7.10",
     "@nuxtjs/i18n": "^8.0.0-beta.10",
     "gh-pages": "^5.0.0",
-    "nuxt": "^3.2.2"
+    "nuxt": "^3.2.2",
+    "nuxt-icon": "^0.3.2",
+    "sass": "^1.58.3",
+    "sass-loader": "^13.2.0"
   },
   "dependencies": {
     "nuxt-windicss": "^2.6.0"

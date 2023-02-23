@@ -30,7 +30,7 @@ export default defineConfig({
         pink: colors.fuchsia,
       },
       fontFamily: {
-        sans: ['Graphik', 'sans-serif'],
+        sans: ['Bitter', 'sans-serif'],
         serif: ['Merriweather', 'serif'],
       },
       spacing: {

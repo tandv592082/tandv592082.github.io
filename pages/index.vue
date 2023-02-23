@@ -3,6 +3,7 @@ definePageMeta({
     layout: 'index',
 });
 
+
 const CVTitle = resolveComponent('CVTitle');
 const CVContactInfo = resolveComponent('CVContactInfo');
 const CVWorkInfo = resolveComponent('CVWorkInfo');
@@ -10,19 +11,24 @@ const CVSkillDetails = resolveComponent('CVSkillDetails');
 </script>
 
 <template>
-    <div>
-        <p class="text-center text-xl">Tan Duong Van</p>
-        <p class="text-center">Backend Engineer</p>
-    </div>
-    <div class="w-full flex justify-center">
-        <CVContactInfo info="Yen Thang, Y Yen, Nam Dinh" class="" />
-        <CVContactInfo type="email" info="tandv.jobs@gmail.com" class="mx-2" />
-        <CVContactInfo type="phone" info="0352872240" class="mx-2" />
-        <CVContactInfo type="link" text="LinkedIn" info="https://www.linkedin.com/in/tan-duong-van-106789126/" />
+    <div class="mb-8">
+        <p class="text-center text-3xl font-medium">Tan Duong Van</p>
+        <p class="text-center text-xl text-dark-50">Backend Engineer</p>
+        <div class="w-full flex justify-center">
+            <CVContactInfo info="Yen Thang, Y Yen, Nam Dinh"/>
+            <CVContactInfo type="email" info="tandv.jobs@gmail.com" />
+            <CVContactInfo type="phone" info="0352872240" />
+            <CVContactInfo 
+                type="link" 
+                text="LinkedIn" 
+                info="https://www.linkedin.com/in/tan-duong-van-106789126/" 
+                :has-right-divider="false"/>
+        </div>
     </div>
     <div class="w-full">
-        <CVTitle title="Summary">
-            <p>
+        <CVTitle :title="$t('system.CVHeaderTitle.summary')">
+            <div>
+               <p>
                 Backend Engineer with over 4 years of experience in developing and maintaining complex
                 software applications using Java and Spring Boot. Extensive experience in deploying
                 WebService systems for monitoring and controlling self-driving cars and drones, communicating
@@ -30,12 +36,15 @@ const CVSkillDetails = resolveComponent('CVSkillDetails');
                 system. Also experienced in implementing RESTful APIs for both mobile and web. With over 1
                 year of experience in Frontend development using React Native, Vue.js, and optimizing
                 WordPress sites.
-                <br>
+               </p>
+                
+               <p class="mt-2">
                 I am always dedicated and serious in my work and constantly seeking to improve my skills and
                 knowledge through research.
-            </p>
+               </p>
+            </div>
         </CVTitle>
-        <CVTitle title="Technical Skills">
+        <CVTitle :title="$t('system.CVHeaderTitle.skills')">
             <ul class="list-disc pl-6">
                 <li>
                     <CVSkillDetails skill-title="Backend Development" skill-details="Java, Spring Boot, Nodejs" />
@@ -51,7 +60,7 @@ const CVSkillDetails = resolveComponent('CVSkillDetails');
                 </li>
             </ul>
         </CVTitle>
-        <CVTitle title="Professional Experience">
+        <CVTitle :title="$t('system.CVHeaderTitle.experience')">
             <CVWorkInfo 
                 company-link="https://phenikaa-x.com"
                 company-name="Phenikaa-X JSC" 
@@ -86,14 +95,14 @@ const CVSkillDetails = resolveComponent('CVSkillDetails');
                 work-period="08/2019 - 02/2019" />
         </CVTitle>
 
-        <CVTitle title="Education">
+        <CVTitle :title="$t('system.CVHeaderTitle.education')">
             <CVWorkInfo 
                 company-name="University of Engineering and Technology, VNU" 
                 company-address="09/2013 – 07/2018"
                 work-position="Bachelor of Information Technology" />
         </CVTitle>
 
-        <CVTitle title="Additional Information">
+        <CVTitle :title="$t('system.CVHeaderTitle.additionalInformation')">
             Languages: Vietnamese (Native), English.
         </CVTitle>
     </div>

@@ -17,14 +17,14 @@ const props = defineProps({
 </script>
 
 <template>
-    <div>
-        <a v-if="props.type === 'email'" :href="`mailto:${props.info}`">
+    <div class="flex flex-wrap">
+        <a class="flex-1" v-if="props.type === 'email'" :href="`mailto:${props.info}`">
             {{ props.info }}
         </a>
-        <a v-else-if="props.type === 'phone'" :href="`tel:${props.info}`">
+        <a class="flex-1" v-else-if="props.type === 'phone'" :href="`tel:${props.info}`">
             {{ props.info }}
         </a>
-        <a v-else-if="props.type === 'link'" :href="props.info">
+        <a class="flex-1" v-else-if="props.type === 'link'" :href="props.info">
             {{ props.text || props.info }}
         </a>
         <p v-else>

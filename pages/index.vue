@@ -5,11 +5,13 @@ definePageMeta({
 
 const CVTitle = resolveComponent('CVTitle');
 const CVContactInfo = resolveComponent('CVContactInfo');
+const CVWorkInfo = resolveComponent('CVWorkInfo');
+const CVSkillDetails = resolveComponent('CVSkillDetails');
 </script>
 
 <template>
     <div>
-        <p class="text-center text-xl">Tan Duong Van 1121</p>
+        <p class="text-center text-xl">Tan Duong Van</p>
         <p class="text-center">Backend Engineer</p>
     </div>
     <div class="w-full flex justify-center">
@@ -33,26 +35,62 @@ const CVContactInfo = resolveComponent('CVContactInfo');
                 knowledge through research.
             </p>
         </CVTitle>
-        <CVTitle title="Technical Skills" />
-        <p>
-            Java (4+ years of experience).
-             Spring Boot (3+ years of experience).
-             Hibernate (3+ years of experience).
-             Database: MySQL and MongoDB (3+ years of experience).
-             Web/app development: HTML, CSS. JS. ReactJS, React Native, VueJS, WordPress,
-            WebSocket.
-             Build Tools: GitLab CI/CD, Docker.
-             Project tools: JIRA software.
-             Operating system: Linux, VPS, Linux server, Window.
-             IoT: ROS comunication, MQTT Bridge.
-             Experience with RESTful API design and implementation.
-             Proficient in Git and familiar with Agile/Scrum development
-        </p>
-        <CVTitle title="Professional Experience" />
+        <CVTitle title="Technical Skills">
+            <ul class="list-disc pl-6">
+                <li>
+                    <CVSkillDetails skill-title="Backend Development" skill-details="Java, Spring Boot, Nodejs" />
+                </li>
+                <li>
+                    <CVSkillDetails skill-title="Backend Development" skill-details="Java, Spring Boot, Nodejs" />
+                </li>
+                <li>
+                    <CVSkillDetails skill-title="Backend Development" skill-details="Java, Spring Boot, Nodejs" />
+                </li>
+                <li>
+                    <CVSkillDetails  skill-details="Java, Spring Boot, Nodejs" />
+                </li>
+            </ul>
+        </CVTitle>
+        <CVTitle title="Professional Experience">
+            <CVWorkInfo 
+                company-link="https://phenikaa-x.com"
+                company-name="Phenikaa-X JSC" 
+                company-address="Ha Dong, Ha Noi"
+                work-position="Web Application Engineer" 
+                work-period="06/2021 - Present"
+                project-name="Reseach and develop control application and webservice for self-driving car and drone"
+                project-description="Reseach and develop control application and webservice for self-driving car and drone"
+                project-technologies="Spring Boot, MongoDB, Redis, Docker, Vuejs, ReactJs"
+                :project-responsibilities="[
+                    `Developed and deployed WebService system for monitoring and controlling self-driving
+                    cars and drones, ensuring smooth communication between the systems and the control
+                    center.`,
+                    `Implemented communication between the backend and Robot Operating System (ROS)
+                    to exchange data and control signals using MQTT protocol.`,
+                    `Improved application performance by optimizing database queries and implementing
+                    caching mechanisms`,
+                    `Implemented industry best practices, such as data validation and error handling, to ensure
+                    the reliability and security of the applications.`
+                ]"
+                 />
+            <CVWorkInfo 
+                company-link="https://khoitaodoanhnghiep.com"
+                company-name="FADI JSC" 
+                company-address="Nam Dinh" 
+                work-position="Web Application Developer"
+                work-period="02/2019 - 02/2021" />
+            <CVWorkInfo 
+                company-name="ABA Golf" 
+                company-address="Hoang Quoc Viet, Ha Noi" 
+                work-position="Frontend Developer"
+                work-period="08/2019 - 02/2019" />
+        </CVTitle>
 
         <CVTitle title="Education">
-            University of Engineering and Technology, VNU 09/2013 – 07/2018
-            Bachelor of Information Technology
+            <CVWorkInfo 
+                company-name="University of Engineering and Technology, VNU" 
+                company-address="09/2013 – 07/2018"
+                work-position="Bachelor of Information Technology" />
         </CVTitle>
 
         <CVTitle title="Additional Information">

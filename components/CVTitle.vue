@@ -8,9 +8,8 @@ const props = defineProps({
 </script>
 
 <template>
-    <div class="w-full">
-        <p class="text-xl">{{ props.title }}</p>
-        <div></div>
+    <div class="w-full mb-5">
+        <p class="text-xl font-semi-bold">{{ props.title.toUpperCase() }}</p>
         <slot />
     </div>
 </template>

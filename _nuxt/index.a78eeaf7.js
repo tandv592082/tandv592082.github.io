@@ -1,1 +1,0 @@
-import{k as o,o as t,b as r,r as s}from"./entry.4cf80731.js";const n={},a={class:"grid container mx-auto pa-4"};function c(e,d){return t(),r("div",a,[s(e.$slots,"default")])}const i=o(n,[["render",c]]);export{i as default};

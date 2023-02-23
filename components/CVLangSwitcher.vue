@@ -16,27 +16,21 @@
                     class="absolute right-0 mt-2 w-56 origin-top-right divide-y divide-gray-100 rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none">
                     <div class="py-2 ">
                        <p class="text-center">
-                            Choose languages {{ $t('welcome') }}
+                            {{ $t('settings.languages.title') }}
                        </p>
                     </div>
                     <div class="px-1 py-1">
-                        <MenuItem v-slot="{ active }" @click="switchLanguage('en')">
-                        <button :class="[
-                            active ? 'bg-violet-500 text-white' : 'text-gray-900',
-                            'group flex w-full items-center rounded-md px-2 py-2 text-sm',
-                        ]">
-                            <Icon name="emojione:flag-for-united-states" size="24" class="cursor-pointer" />
-                            <p class="ml-2">English</p>
-                        </button>
-                        </MenuItem>
-                        <MenuItem v-slot="{ active }" @click="switchLanguage('vi')">
-                        <button :class="[
-                            active ? 'bg-violet-500 text-white' : 'text-gray-900',
-                            'group flex w-full items-center rounded-md px-2 py-2 text-sm',
-                        ]">
-                            <Icon name="emojione:flag-for-vietnam" size="24" class="cursor-pointer" />
-                            <p class="ml-2">Vietnamese</p>
-                        </button>
+                        <MenuItem 
+                            :key="menu.lang" 
+                            v-for="menu in i18nMenus" v-slot="{ active }" 
+                            @click="switchLanguage(menu.lang)">
+                                <button :class="[
+                                    active ? 'bg-violet-500 text-white' : 'text-gray-900',
+                                    'group flex w-full items-center rounded-md px-2 py-2 text-sm',
+                                ]">
+                                    <Icon :name="menu.flag" size="24" class="cursor-pointer" />
+                                    <p class="ml-2">{{ $t(`settings.languages.${menu.lang}`) }}</p>
+                                </button>
                         </MenuItem>
                     </div>
                 </MenuItems>
@@ -46,14 +40,10 @@
 </template>
   
 <script lang="ts" setup>
-
+import { useLang } from '~~/composables/useLang';
+import { i18nMenus } from '~~/i18n';
 import { Menu, MenuButton, MenuItems, MenuItem } from '@headlessui/vue';
-const { locale } = useI18n();
 
-const switchLanguage = (lang: string) => {
-    locale.value = lang;
-}
-
-
+const { switchLanguage } = useLang();
 </script>
   

@@ -17,27 +17,18 @@
 
                     <div class="py-2 ">
                        <p class="text-center">
-                            Download my CV
+                            {{ $t('settings.download.title') }}
                        </p>
                     </div>
 
                     <div class="px-1 py-1">
-                        <MenuItem v-slot="{ active }">
+                        <MenuItem v-slot="{ active }" v-for="menu in i18nMenus" :key="menu.lang">
                         <button :class="[
                             active ? 'bg-violet-500 text-white' : 'text-gray-900',
                             'group flex w-full items-center rounded-md px-2 py-2 text-sm',
                         ]">
-                            <Icon name="emojione:flag-for-united-states" size="24" class="cursor-pointer" />
-                            <p class="ml-2">English version</p>
-                        </button>
-                        </MenuItem>
-                        <MenuItem v-slot="{ active }">
-                        <button :class="[
-                            active ? 'bg-violet-500 text-white' : 'text-gray-900',
-                            'group flex w-full items-center rounded-md px-2 py-2 text-sm',
-                        ]">
-                            <Icon name="emojione:flag-for-vietnam" size="24" class="cursor-pointer" />
-                            <p class="ml-2">Vietnamese version</p>
+                            <Icon :name="menu.flag" size="24" class="cursor-pointer" />
+                            <p class="ml-2">{{ $t(`settings.download.${menu.lang}`) }}</p>
                         </button>
                         </MenuItem>
                     </div>
@@ -48,6 +39,7 @@
 </template>
   
 <script lang="ts" setup>
-import { Menu, MenuButton, MenuItems, MenuItem } from '@headlessui/vue'
+import { Menu, MenuButton, MenuItems, MenuItem } from '@headlessui/vue';
+import { i18nMenus } from '~~/i18n';
 </script>
   

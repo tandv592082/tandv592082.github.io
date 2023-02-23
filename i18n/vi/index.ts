@@ -9,7 +9,7 @@ export default {
             en: 'Tiếng Anh'
         },
         download: {
-            title: 'Tải CV',
+            title: 'Tải xuống CV',
             vi: 'Bản tiếng Việt',
             en: 'Bản tiếng Anh'
         }

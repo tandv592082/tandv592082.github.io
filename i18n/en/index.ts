@@ -29,5 +29,9 @@ export default {
             responsibilities: 'responsibilities'
         }
 
+    },
+    app: {
+        name: `Tan Duong Van's CV`,
+        content: `Content`
     }
 }

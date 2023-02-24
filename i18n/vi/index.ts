@@ -29,5 +29,9 @@ export default {
             responsibilities: 'Trách nhiệm'
         }
 
+    },
+    app: {
+        name: `Dương Văn Tân`,
+        content: `Dương Văn Tân`
     }
 }

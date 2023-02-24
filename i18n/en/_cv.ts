@@ -2,7 +2,6 @@ export default {
     persionalInfo: {
         fullname: 'Tan Duong Van',
         position: 'Backend Engineer',
-        address: 'Yen Thang, Y Yen, Nam Dinh',
         email: 'tandv.jobs@gmail.com',
         phone: '0352872240',
         linkedin: 'https://www.linkedin.com/in/tan-duong-van-106789126/'
@@ -47,7 +46,84 @@ export default {
         },
     },
     workExperience: {
-        
+        0: {
+            company: {
+                name: 'Phenikaa-X JSC',
+                address: 'Ha Dong, Ha Noi',
+                link: 'https://phenikaa-x.com'
+            },
+            job: {
+                position: 'Web Application Engineer',
+                period: '06/2021 - Present',
+            },
+            project: {
+                title: 'Reseach and develop control application and webservice for self-driving car and drone',
+                description: 'Reseach and develop control application and webservice for self-driving car and drone',
+                technologies: 'Spring Boot, MongoDB, Redis, Docker, Vuejs, ReactJs',
+                responsibilities: {
+                    0: `Developed and deployed WebService system for monitoring and controlling self-driving cars and drones, ensuring smooth communication between the systems and the control center`,
+                    1: `Implemented communication between the backend and Robot Operating System (ROS) to exchange data and control signals using MQTT protocol.`,
+                    2: `Improved application performance by optimizing database queries and implementing caching mechanisms`,
+                    3: `Implemented industry best practices, such as data validation and error handling, to ensure the reliability and security of the applications.`
+                }
+            }
+        },
+        1: {
+            company: {
+                name: 'FADI JSC',
+                address: 'Nam Dinh',
+                link: 'https://khoitaodoanhnghiep.com'
+            },
+            job: {
+                position: 'Web Application Developer',
+                period: '02/2019 - 02/2021',
+            },
+            project: {
+                title: 'Reseach and develop control application and webservice for self-driving car and drone',
+                description: 'Reseach and develop control application and webservice for self-driving car and drone',
+                technologies: 'Spring Boot, MongoDB, Redis, Docker, Vuejs, ReactJs',
+                responsibilities: {
+                    0: `Developed and deployed WebService system for monitoring and controlling self-driving cars and drones, ensuring smooth communication between the systems and the control center`,
+                    1: `Implemented communication between the backend and Robot Operating System (ROS) to exchange data and control signals using MQTT protocol.`,
+                    2: `Improved application performance by optimizing database queries and implementing caching mechanisms`,
+                    3: `Implemented industry best practices, such as data validation and error handling, to ensure the reliability and security of the applications.`
+                }
+            }
+        },
+        2: {
+            company: {
+                name: 'ABAGold',
+                address: 'Hoang Quoc Viet, Ha Noi',
+            },
+            job: {
+                position: 'Web Application Developer',
+                period: '02/2019 - 02/2021',
+            },
+            project: {
+                title: 'Reseach and develop control application and webservice for self-driving car and drone',
+                description: 'Reseach and develop control application and webservice for self-driving car and drone',
+                technologies: 'Spring Boot, MongoDB, Redis, Docker, Vuejs, ReactJs',
+                responsibilities: {
+                    0: `Developed and deployed WebService system for monitoring and controlling self-driving cars and drones, ensuring smooth communication between the systems and the control center`,
+                    1: `Implemented communication between the backend and Robot Operating System (ROS) to exchange data and control signals using MQTT protocol.`,
+                    2: `Improved application performance by optimizing database queries and implementing caching mechanisms`,
+                    3: `Implemented industry best practices, such as data validation and error handling, to ensure the reliability and security of the applications.`
+                }
+            }
+        }
+    },
+    education: {
+        university: {
+            name: 'University of Engineering and Technology, VNU',
+            address: 'Cau Giay, Ha Noi'
+        },
+        information: {
+            degree: 'Bachelor of Information Technology',
+            period: '09/2013 – 07/2018'
+        }
+    },
+    additionalInformation: {
+        0: 'Languages: Vietnamese (Native), English'
     }
 
 }

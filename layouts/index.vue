@@ -12,7 +12,7 @@ const CVThemeSwitcher = resolveComponent('CVThemeSwitcher');
             <CVLangSwitcher class="mr-5"/>
             <CVThemeSwitcher />
         </div>
-        <div class="mx-auto content w-prose px-4 py-2 bg-light-200 rounded-md">
+        <div class="mx-auto content w-prose px-4 py-2 rounded-md">
             <slot />
         </div>
     </div>

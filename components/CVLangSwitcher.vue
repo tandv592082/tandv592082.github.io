@@ -1,6 +1,6 @@
 <template>
     <div>
-        <Menu as="div" class="relative inline-block text-left">
+        <Menu as="div" class="relative inline-block text-left dark:bg-dark">
             <div>
                 <MenuButton
                     class="inline-flex w-full justify-center rounded-md hover:bg-opacity-30 focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-opacity-75">
@@ -13,9 +13,9 @@
                 leave-active-class="transition duration-75 ease-in" leave-from-class="transform scale-100 opacity-100"
                 leave-to-class="transform scale-95 opacity-0">
                 <MenuItems
-                    class="absolute right-0 mt-2 w-56 origin-top-right divide-y divide-gray-100 rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none">
+                    class="absolute dark:bg-black dark:border dark:border-gray-200 right-0 mt-2 w-56 origin-top-right divide-y divide-gray-100 rounded-md  shadow-lg  ring-1 ring-black ring-opacity-5 focus:outline-none">
                     <div class="py-2 ">
-                       <p class="text-center">
+                       <p class="text-center text-black dark:text-white">
                             {{ $t('settings.languages.title') }}
                        </p>
                     </div>
@@ -29,7 +29,7 @@
                                     'group flex w-full items-center rounded-md px-2 py-2 text-sm',
                                 ]">
                                     <Icon :name="menu.flag" size="24" class="cursor-pointer" />
-                                    <p class="ml-2">{{ $t(`settings.languages.${menu.lang}`) }}</p>
+                                    <p class="ml-2 text-gray-700 dark:text-gray-200">{{ $t(`settings.languages.${menu.lang}`) }}</p>
                                 </button>
                         </MenuItem>
                     </div>

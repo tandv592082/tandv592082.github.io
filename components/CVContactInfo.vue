@@ -22,13 +22,13 @@ const props = defineProps({
 
 <template>
     <div class="flex flex-wrap items-center">
-        <a class="flex-1 underline" v-if="props.type === 'email'" :href="`mailto:${props.info}`">
+        <a class="flex-1 dark:text-white" target="_blank" rel="noopener" v-if="props.type === 'email'" :href="`mailto:${props.info}`">
             {{ props.info }}
         </a>
-        <a class="flex-1 underline" v-else-if="props.type === 'phone'" :href="`tel:${props.info}`">
+        <a class="flex-1 dark:text-white" target="_blank" rel="noopener" v-else-if="props.type === 'phone'" :href="`tel:${props.info}`">
             {{ props.info }}
         </a>
-        <a class="flex-1 underline" v-else-if="props.type === 'link'" :href="props.info">
+        <a class="flex-1 dark:text-white" target="_blank" rel="noopener" v-else-if="props.type === 'link'" :href="props.info">
             {{ props.text || props.info }}
         </a>
         <p v-else>

@@ -8,14 +8,14 @@ export default defineConfig({
   darkMode: 'class', // or 'media'
   theme: {
     divideWidth: {
-        DEFAULT: '10px',
-        '0': '0',
-        '2': '2px',
-        '3': '3px',
-        '4': '4px',
-        '6': '6px',
-        '8': '8px',
-      },
+      DEFAULT: '10px',
+      '0': '0',
+      '2': '2px',
+      '3': '3px',
+      '4': '4px',
+      '6': '6px',
+      '8': '8px',
+    },
     extend: {
       screens: {
         'sm': '640px',
@@ -30,8 +30,8 @@ export default defineConfig({
         pink: colors.fuchsia,
       },
       fontFamily: {
-        sans: ['Bitter', 'sans-serif'],
-        serif: ['Merriweather', 'serif'],
+        sans: [ 'Bitter', 'sans-serif' ],
+        serif: [ 'Merriweather', 'serif' ],
       },
       spacing: {
         128: '32rem',
@@ -55,28 +55,18 @@ export default defineConfig({
       addUtilities(newUtilities)
     }),
     plugin(({ addComponents }) => {
-      const buttons = {
-        '.btn': {
-          padding: '.5rem 1rem',
-          borderRadius: '.25rem',
-          fontWeight: '600',
-        },
-        '.btn-blue': {
-          'backgroundColor': '#3490dc',
-          'color': '#fff',
+      const link = {
+        'a[rel="noopener"]': {
+          color: 'black',
+          borderBottom: '1px solid rgba(125,125,125,.3)',
+          transition: 'border .3s ease-in-out',
+          textDecoration: 'none',
           '&:hover': {
-            backgroundColor: '#2779bd',
-          },
-        },
-        '.btn-red': {
-          'backgroundColor': '#e3342f',
-          'color': '#fff',
-          '&:hover': {
-            backgroundColor: '#cc1f1a',
-          },
+            borderBottom: '1px solid rgba(125,125,125, 1)',
+          }
         },
       }
-      addComponents(buttons)
+      addComponents(link)
     }),
     plugin(({ addDynamic, variants }) => {
       addDynamic('skew', ({ Utility, Style }) => {

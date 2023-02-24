@@ -12,9 +12,9 @@ const CVSkillDetails = resolveComponent('CVSkillDetails');
 
 <template>
     <div class="mb-8">
-        <p class="text-center text-3xl font-medium">Tan Duong Van</p>
-        <p class="text-center text-xl text-dark-50">Backend Engineer</p>
-        <div class="w-full flex justify-center">
+        <p class="text-center text-3xl font-medium text-black dark:text-white">Tan Duong Van</p>
+        <p class="text-center text-xl">Backend Engineer</p>
+        <div class="w-full flex justify-center mt-2">
             <CVContactInfo info="Yen Thang, Y Yen, Nam Dinh"/>
             <CVContactInfo type="email" info="tandv.jobs@gmail.com" />
             <CVContactInfo type="phone" info="0352872240" />

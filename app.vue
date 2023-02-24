@@ -11,13 +11,13 @@ initialzeTheme();
 
 <template>
   <Html :class="`${currentTheme === 'dark' ? 'dark' : ''}`" :lang="locale">
-    <Body
-      class="antialiased duration-300 transition-colors text-gray-800 dark:text-gray-200 bg-white dark:bg-gray-900"
-    >
+
+  <Body class="antialiased dark:bg-black duration-300 transition-colors text-gray-700 dark:text-gray-200">
     <NuxtLayout>
       <NuxtLoadingIndicator />
       <NuxtPage />
     </NuxtLayout>
-    </Body>
-    </Html>
+  </Body>
+
+  </Html>
 </template>

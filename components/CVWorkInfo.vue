@@ -42,7 +42,7 @@ const props = defineProps({
 <template>
     <div class="flex flex-col items-start w-full">
         <div class="flex justify-between w-full">
-            <a v-if="props.companyLink" :href="props.companyLink" class="font-semibold">
+            <a v-if="props.companyLink" :href="props.companyLink"  class="font-semibold dark:text-white" target="_blank" rel="noopener">
                 {{ props.companyName }}
             </a>
             <p v-else class="font-semibold">
@@ -50,7 +50,7 @@ const props = defineProps({
             </p>
             <p class="font-semibold">{{ props.companyAddress }}</p>
         </div>
-        <div class="flex justify-between w-full">
+        <div class="flex justify-between w-full my-1">
             <p class="italic">{{ props.workPosition }}</p>
             <p v-if="props.workPeriod" class="italic">{{ props.workPeriod }}</p>
         </div>

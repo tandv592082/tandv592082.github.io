@@ -9,14 +9,14 @@ initialzeI18n();
 initialzeTheme();
 
 useHead({
-  title: t('app.name'),
-  titleTemplate: `%s - ${t('app.name')}`,
+  title: t('cv.persionalInfo.fullname'),
+  titleTemplate: `%s CV - ${t('cv.persionalInfo.position')}`,
   meta: [
     { name: 'viewport', content: 'width=device-width, initial-scale=1' },
     {
       hid: 'description',
       name: 'description',
-      content: t('app.content'),
+      content: `${t('cv.persionalInfo.fullname')} - ${t('cv.persionalInfo.position')}`,
     },
   ],
   link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
@@ -26,7 +26,7 @@ useHead({
 <template>
   <Html :class="`${currentTheme === 'dark' ? 'dark' : ''}`" :lang="locale">
 
-  <Body class="antialiased dark:bg-black tracking-wide duration-300 font-size transition-colors text-gray-700 dark:text-gray-200">
+  <Body class="antialiased dark:bg-dark-800 tracking-wide duration-300 font-size transition-colors text-gray-700 dark:text-gray-200">
     <NuxtLayout>
       <NuxtLoadingIndicator />
       <NuxtPage />

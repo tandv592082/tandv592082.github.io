@@ -2,44 +2,21 @@ import { defineConfig } from 'windicss/helpers'
 import colors from 'windicss/colors'
 import plugin from 'windicss/plugin'
 
-// themes
+const themeColor = {
+  'gray-700': '#24292f',
+  black: '#0d1117',
+  'gray-200': '#c9d1d9'
+}
 
 export default defineConfig({
   darkMode: 'class', // or 'media'
   theme: {
-    divideWidth: {
-      DEFAULT: '10px',
-      '0': '0',
-      '2': '2px',
-      '3': '3px',
-      '4': '4px',
-      '6': '6px',
-      '8': '8px',
-    },
     extend: {
-      screens: {
-        'sm': '640px',
-        'md': '768px',
-        'lg': '1024px',
-        'xl': '1280px',
-        '2xl': '1536px',
-      },
-      colors: {
-        blue: colors.sky,
-        red: colors.rose,
-        pink: colors.fuchsia,
-      },
+      colors: themeColor,
       fontFamily: {
         sans: [ 'Bitter', 'sans-serif' ],
         serif: [ 'Merriweather', 'serif' ],
-      },
-      spacing: {
-        128: '32rem',
-        144: '36rem',
-      },
-      borderRadius: {
-        '4xl': '2rem',
-      },
+      }
     },
   },
   plugins: [

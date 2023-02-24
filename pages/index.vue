@@ -1,4 +1,6 @@
 <script lang="ts" setup>
+import {getExperienceKeys, getPersonalSummaryKeys, getRespTransalteByIndex, getSkillKeys, getAdditionalInfoKeys} from '~/i18n'
+
 definePageMeta({
     layout: 'index',
 });
@@ -12,98 +14,56 @@ const CVSkillDetails = resolveComponent('CVSkillDetails');
 
 <template>
     <div class="mb-8">
-        <p class="text-center text-3xl font-medium text-black dark:text-white">Tan Duong Van</p>
-        <p class="text-center text-xl">Backend Engineer</p>
+        <p class="text-center text-3xl font-medium text-black dark:text-white">{{ $t('cv.persionalInfo.fullname') }}</p>
+        <p class="text-center text-xl">{{ $t('cv.persionalInfo.position') }}</p>
         <div class="w-full flex justify-center mt-2">
-            <CVContactInfo info="Yen Thang, Y Yen, Nam Dinh"/>
-            <CVContactInfo type="email" info="tandv.jobs@gmail.com" />
-            <CVContactInfo type="phone" info="0352872240" />
+            <CVContactInfo type="email" :info="$t('cv.persionalInfo.email')" />
+            <CVContactInfo type="phone" :info="$t('cv.persionalInfo.phone')" />
             <CVContactInfo 
                 type="link" 
                 text="LinkedIn" 
-                info="https://www.linkedin.com/in/tan-duong-van-106789126/" 
+                :info="$t('cv.persionalInfo.linkedin')" 
                 :has-right-divider="false"/>
         </div>
     </div>
     <div class="w-full">
         <CVTitle :title="$t('system.CVHeaderTitle.summary')">
             <div>
-               <p>
-                Backend Engineer with over 4 years of experience in developing and maintaining complex
-                software applications using Java and Spring Boot. Extensive experience in deploying
-                WebService systems for monitoring and controlling self-driving cars and drones, communicating
-                with robot systems (ROS) through MQTT protocol, and integrating them into the WebService
-                system. Also experienced in implementing RESTful APIs for both mobile and web. With over 1
-                year of experience in Frontend development using React Native, Vue.js, and optimizing
-                WordPress sites.
-               </p>
-                
-               <p class="mt-2">
-                I am always dedicated and serious in my work and constantly seeking to improve my skills and
-                knowledge through research.
-               </p>
+               <p :key="index" v-for="(summary, index) in getPersonalSummaryKeys()" :class="index && 'mt-2'">{{ $t(`cv.summary.${summary}`) }}</p>
             </div>
         </CVTitle>
         <CVTitle :title="$t('system.CVHeaderTitle.skills')">
             <ul class="list-disc pl-6">
-                <li>
-                    <CVSkillDetails skill-title="Backend Development" skill-details="Java, Spring Boot, Nodejs" />
-                </li>
-                <li>
-                    <CVSkillDetails skill-title="Backend Development" skill-details="Java, Spring Boot, Nodejs" />
-                </li>
-                <li>
-                    <CVSkillDetails skill-title="Backend Development" skill-details="Java, Spring Boot, Nodejs" />
-                </li>
-                <li>
-                    <CVSkillDetails  skill-details="Java, Spring Boot, Nodejs" />
+                <li v-for="(skill, index) of getSkillKeys()" :key="index">
+                    <CVSkillDetails :skill-title="$t(`cv.skills.${skill}.title`)" :skill-details="$t(`cv.skills.${skill}.details`)" />
                 </li>
             </ul>
         </CVTitle>
         <CVTitle :title="$t('system.CVHeaderTitle.experience')">
             <CVWorkInfo 
-                company-link="https://phenikaa-x.com"
-                company-name="Phenikaa-X JSC" 
-                company-address="Ha Dong, Ha Noi"
-                work-position="Web Application Engineer" 
-                work-period="06/2021 - Present"
-                project-name="Reseach and develop control application and webservice for self-driving car and drone"
-                project-description="Reseach and develop control application and webservice for self-driving car and drone"
-                project-technologies="Spring Boot, MongoDB, Redis, Docker, Vuejs, ReactJs"
-                :project-responsibilities="[
-                    `Developed and deployed WebService system for monitoring and controlling self-driving
-                    cars and drones, ensuring smooth communication between the systems and the control
-                    center.`,
-                    `Implemented communication between the backend and Robot Operating System (ROS)
-                    to exchange data and control signals using MQTT protocol.`,
-                    `Improved application performance by optimizing database queries and implementing
-                    caching mechanisms`,
-                    `Implemented industry best practices, such as data validation and error handling, to ensure
-                    the reliability and security of the applications.`
-                ]"
+                v-for="(work) in getExperienceKeys()"
+                :company-link="$t(`cv.workExperience.${work}.company.link`)"
+                :company-name="$t(`cv.workExperience.${work}.company.name`)" 
+                :company-address="$t(`cv.workExperience.${work}.company.address`)"
+                :work-position="$t(`cv.workExperience.${work}.job.position`)" 
+                :work-period="$t(`cv.workExperience.${work}.job.period`)"
+                :project-name="$t(`cv.workExperience.${work}.project.title`)"
+                :project-description="$t(`cv.workExperience.${work}.project.description`)"
+                :project-technologies="$t(`cv.workExperience.${work}.project.technologies`)"
+                :project-responsibilities="getRespTransalteByIndex(work, $t)"
                  />
-            <CVWorkInfo 
-                company-link="https://khoitaodoanhnghiep.com"
-                company-name="FADI JSC" 
-                company-address="Nam Dinh" 
-                work-position="Web Application Developer"
-                work-period="02/2019 - 02/2021" />
-            <CVWorkInfo 
-                company-name="ABA Golf" 
-                company-address="Hoang Quoc Viet, Ha Noi" 
-                work-position="Frontend Developer"
-                work-period="08/2019 - 02/2019" />
         </CVTitle>
 
         <CVTitle :title="$t('system.CVHeaderTitle.education')">
             <CVWorkInfo 
-                company-name="University of Engineering and Technology, VNU" 
-                company-address="09/2013 – 07/2018"
-                work-position="Bachelor of Information Technology" />
+                :company-name="$t('cv.education.university.name')" 
+                :company-address="$t('cv.education.university.address')"
+                :work-position="$t('cv.education.information.degree')"
+                :work-pre="$t('cv.education.information.degree')" />
         </CVTitle>
 
         <CVTitle :title="$t('system.CVHeaderTitle.additionalInformation')">
-            Languages: Vietnamese (Native), English.
+            <p v-for="info in getAdditionalInfoKeys()">{{ $t(`cv.additionalInformation.${info}`) }}</p>
         </CVTitle>
     </div>
 </template>

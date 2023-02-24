@@ -15,6 +15,13 @@ export const i18nMenus = [
     }
 ]
 
+export const getPersonalSummaryKeys = () => Object.keys(vi.cv.summary);
+export const getSkillKeys = () => Object.keys(vi.cv.skills);
+export const getExperienceKeys = () => Object.keys(vi.cv.workExperience);
+export const getRespTransalteByIndex = (index: any, t: any) => Object.keys(vi.cv.workExperience[ `${index as keyof typeof vi.cv.workExperience}` ].project.responsibilities).map((key) => t(`cv.workExperience.${index}.project.responsibilities.${key}`));
+export const getAdditionalInfoKeys = () => Object.keys(vi.cv.additionalInformation)
+
+
 export const initialzeI18n = () => {
     const defaultLang: LANGS = 'en';
     const currentLang = Storage.load(LANG_KEY);

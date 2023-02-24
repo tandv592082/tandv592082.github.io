@@ -2,7 +2,7 @@ export default {
     persionalInfo: {
         fullname: 'Tan Duong Van',
         position: 'Backend Engineer',
-        email: 'tandv.jobs@gmail.com',
+        email: `tandv.jobs@gmail.com`,
         phone: '0352872240',
         linkedin: 'https://www.linkedin.com/in/tan-duong-van-106789126/'
     },

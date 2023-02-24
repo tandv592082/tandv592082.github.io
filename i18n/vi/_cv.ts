@@ -2,7 +2,7 @@ export default {
     persionalInfo: {
         fullname: 'Dương Văn Tân',
         position: 'Backend Engineer',
-        email: 'tandv.jobs@gmail.com',
+        email: `tandv.jobs@gmail.com`,
         phone: '0352872240',
         linkedin: 'https://www.linkedin.com/in/tan-duong-van-106789126/'
     },
@@ -36,7 +36,6 @@ export default {
             details: 'Java, Spring Boot',
         },
         6: {
-            title: `Backend development`,
             details: 'Java, Spring Boot',
         },
     },
@@ -66,7 +65,7 @@ export default {
         1: {
             company: {
                 name: 'FADI JSC',
-                address: 'Nam Dinh',
+                address: 'Nam Định',
                 link: 'https://khoitaodoanhnghiep.com'
             },
             job: {
@@ -88,10 +87,10 @@ export default {
         2: {
             company: {
                 name: 'ABAGold',
-                address: 'Hoang Quoc Viet, Ha Noi',
+                address: 'Hoàng Quốc Việt, Hà Nội',
             },
             job: {
-                position: 'Web Application Developer',
+                position: 'Frontend Developer',
                 period: '02/2019 - 02/2021',
             },
             project: {
@@ -109,16 +108,16 @@ export default {
     },
     education: {
         university: {
-            name: 'University of Engineering and Technology, VNU',
-            address: 'Cau Giay, Ha Noi'
+            name: 'Đại học Công Nghệ, ĐHQGHN',
+            address: 'Cầu Giấy, Hà Nội'
         },
         information: {
-            degree: 'Bachelor of Information Technology',
+            degree: 'Cử nhân Công Nghệ Thông Tin',
             period: '09/2013 – 07/2018'
         }
     },
     additionalInformation: {
-        0: 'Languages: Vietnamese (Native), English'
+        0: 'Ngôn ngữ: Tiếng Việt(gốc), Tiếng Anh'
     }
 
 }

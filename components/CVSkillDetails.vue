@@ -12,8 +12,8 @@ const props = defineProps({
 </script>
 
 <template>
-    <div class="flex">
+    <div class="flex mb-1">
         <p class="font-semibold" v-if="props.skillTitle">{{ `${props.skillTitle}: ` }}</p>
-        <p>{{ ` ${props.skillDetails}` }}</p>
+        <p class="ml-1">{{ ` ${props.skillDetails}` }}</p>
     </div>
 </template>

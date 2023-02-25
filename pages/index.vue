@@ -10,6 +10,7 @@ const CVTitle = resolveComponent('CVTitle');
 const CVContactInfo = resolveComponent('CVContactInfo');
 const CVWorkInfo = resolveComponent('CVWorkInfo');
 const CVSkillDetails = resolveComponent('CVSkillDetails');
+
 </script>
 
 <template>
@@ -41,7 +42,7 @@ const CVSkillDetails = resolveComponent('CVSkillDetails');
         </CVTitle>
         <CVTitle :title="$t('system.CVHeaderTitle.experience')">
             <CVWorkInfo 
-                v-for="(work) in getExperienceKeys()"
+                v-for="(work, index) in getExperienceKeys()"
                 :company-link="$t(`cv.workExperience.${work}.company.link`)"
                 :company-name="$t(`cv.workExperience.${work}.company.name`)" 
                 :company-address="$t(`cv.workExperience.${work}.company.address`)"
@@ -59,7 +60,7 @@ const CVSkillDetails = resolveComponent('CVSkillDetails');
                 :company-name="$t('cv.education.university.name')" 
                 :company-address="$t('cv.education.university.address')"
                 :work-position="$t('cv.education.information.degree')"
-                :work-pre="$t('cv.education.information.degree')" />
+                :work-period="$t('cv.education.information.period')" />
         </CVTitle>
 
         <CVTitle :title="$t('system.CVHeaderTitle.additionalInformation')">

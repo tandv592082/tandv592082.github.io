@@ -56,14 +56,14 @@ const props = defineProps({
         </div>
         
         <div class="my-2" v-if="props.projectName">
-            <p>
+            <p class="mb-1">
                 <span class="font-semibold">
                     Project:
                 </span>
                 {{ props.projectName }}
             </p>
             <ul class="list-disc ml-8">
-                <li>
+                <li class="mb-1">
                     <p>
                         <span class="font-semibold">
                             Description:
@@ -71,7 +71,7 @@ const props = defineProps({
                         {{ props.projectDescription }}
                     </p>
                 </li>
-                <li>
+                <li class="mb-1">
                     <p>
                         <span class="font-semibold">
                             Technologies:
@@ -82,7 +82,7 @@ const props = defineProps({
                 <li>
                     <p class="font-semibold">Responsibilities:</p>
                     <ul class="list-circle ml-8">
-                        <li v-for="responsibility in props.projectResponsibilities">
+                        <li v-for="(responsibility, index) in props.projectResponsibilities" :key="index" :class="index && 'mt-1'">
                             {{ responsibility }}
                         </li>
                     </ul>

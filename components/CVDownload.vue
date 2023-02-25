@@ -1,5 +1,5 @@
 <template>
-    <div >
+    <div v-if="!isLoading">
         <Menu as="div" class="relative inline-block text-left">
             <div>
                 <MenuButton
@@ -22,7 +22,7 @@
                     </div>
 
                     <div class="px-1 py-1">
-                        <MenuItem v-slot="{ active }" v-for="menu in i18nMenus" :key="menu.lang">
+                        <MenuItem v-slot="{ active }" v-for="menu in i18nMenus" :key="menu.lang" @click="downloadPdfCV()">
                         <button :class="[
                             active ? 'bg-violet-500 text-white' : 'text-gray-900',
                             'group flex w-full items-center rounded-md px-2 py-2 text-sm',
@@ -41,5 +41,10 @@
 <script lang="ts" setup>
 import { Menu, MenuButton, MenuItems, MenuItem } from '@headlessui/vue';
 import { i18nMenus } from '~~/i18n';
+import { useSavePDF } from '~~/composables/useSavePDF';
+
+const {isLoading, downloadPdfCV} = useSavePDF();
+
+
 </script>
   

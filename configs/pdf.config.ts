@@ -1,19 +1,15 @@
 import { THEME_MODE } from "~~/enums/setting";
 
 const opts = {
-    margin: 1/2,
-    // filename: 'myfile.pdf',
+    margin: [25, 0, 25, 0],
     image: { type: 'jpeg', quality: 1},
-    // html2canvas: { scale: 2 }, https://html2canvas.hertzen.com/configuration
-    jsPDF: { unit: 'mm', format: 'a4', orientation: 'portrait', floatPrecision: 'smart'}
+    html2canvas: {  useCORS: true, allowTaint: true }, // https://html2canvas.hertzen.com/configuration
+    jsPDF: { unit: 'pt', format: 'a4', orientation: 'portrait', compressPDF: true}
 }
 
-const getPdfOptions = (lang: string, theme: THEME_MODE) => ({
+const getPdfOptions = (lang: string) => ({
     ...opts,
     filename: lang === 'vi' ? 'DUONG_VAN_TAN_CV_vi.pdf' : 'TAN_DUONG_VAN_CV_en.pdf',
-    html2canvas: {
-        backgroundColor: theme === 'dark' ? '#181818' : '#f00'
-    }
 })
 
 export default getPdfOptions;

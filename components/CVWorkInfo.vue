@@ -40,6 +40,7 @@ const props = defineProps({
 </script>
 
 <template>
+    <!-- <div class="html2pdf__page-break"></div> -->
     <div class="flex flex-col items-start w-full">
         <div class="flex justify-between w-full my-1 text-dark-500 dark:text-gray-200">
             <p class="font-semibold">{{ props.workPosition }}</p>

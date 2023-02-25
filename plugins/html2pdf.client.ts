@@ -8,7 +8,7 @@ export default defineNuxtPlugin(() => {
         provide: {
             savePDF: (elementID: string, lang: string, theme: THEME_MODE) => {
                 const element = document.getElementById(elementID);
-                return pdfWorker.set(getPdfOptions(lang, theme)).from(element).save();
+                return pdfWorker.set(getPdfOptions(lang)).from(element).save();
             }
         }
     }

@@ -5,7 +5,6 @@ definePageMeta({
     layout: 'index',
 });
 
-const { locale } = useI18n();
 
 const CVTitle = resolveComponent('CVTitle');
 const CVContactInfo = resolveComponent('CVContactInfo');

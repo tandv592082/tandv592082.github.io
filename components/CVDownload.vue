@@ -34,7 +34,7 @@
                 </MenuItems>
             </transition>
         </Menu>
-        <Icon v-else name="svg-spinners:clock" size="24" />
+        <Icon v-else name="svg-spinners:180-ring-with-bg" size="24" />
     </div>
 </template>
   

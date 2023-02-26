@@ -16,7 +16,7 @@ const CVSkillDetails = resolveComponent('CVSkillDetails');
 <template>
     <div class="mb-8">
         <p class="text-center text-3xl font-medium text-black dark:text-white">{{ $t('cv.persionalInfo.fullname') }}</p>
-        <p class="text-center text-xl">{{ $t('cv.persionalInfo.position') }}</p>
+        <p class="text-center text-xl font-medium">{{ $t('cv.persionalInfo.position') }}</p>
         <div class="w-full flex justify-center mt-2">
             <CVContactInfo type="email" :info="$t('cv.persionalInfo.email')" />
             <CVContactInfo type="phone" :info="$t('cv.persionalInfo.phone')" />

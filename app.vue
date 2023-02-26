@@ -29,7 +29,7 @@ useHead({
 <template>
   <Html :class="`${currentTheme === 'dark' ? 'dark' : ''}`" :lang="locale">
 
-  <Body class="antialiased dark:bg-dark-800 tracking-wide font-size transition-colors text-gray-700 dark:text-gray-200">
+  <Body class="antialiased dark:bg-dark-800 tracking-wide font-size  text-gray-700 dark:text-gray-200">
     <NuxtLayout>
       <NuxtLoadingIndicator />
       <NuxtPage />

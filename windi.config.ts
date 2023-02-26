@@ -14,7 +14,7 @@ export default defineConfig({
     extend: {
       colors: themeColor,
       fontFamily: {
-        sans: [ 'Bitter', 'sans-serif' ],
+        sans: [ 'Barlow', 'sans-serif' ],
         serif: [ 'Merriweather', 'serif' ],
       }
     },

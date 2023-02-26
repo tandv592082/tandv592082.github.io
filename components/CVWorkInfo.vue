@@ -47,7 +47,7 @@ const props = defineProps({
             <p class="font-semibold" v-if="props.workPeriod">{{ props.workPeriod }}</p>
         </div>
         <div class="flex justify-between w-full">
-            <a v-if="props.companyLink" :href="props.companyLink"  class=" dark:text-white italic" target="_blank" rel="noopener">
+            <a v-if="props.companyLink" :href="props.companyLink"  class=" dark:text-white italic" :target="props.companyLink === '#' ? '_self' : '_blank'" rel="noopener">
                 {{ props.companyName }}
             </a>
             <p v-else class="font-semibold italic">
@@ -56,15 +56,15 @@ const props = defineProps({
             <p class="italic">{{ props.companyAddress }}</p>
         </div>
         
-        <div class="my-2" v-if="props.projectName">
-            <p class="mb-1">
+        <div class="mt-3" v-if="props.projectName">
+            <p>
                 <span class="font-semibold">
                     Project:
                 </span>
                 {{ props.projectName }}
             </p>
             <ul class="list-disc ml-8">
-                <li class="mb-1">
+                <li class="mt-1">
                     <p>
                         <span class="font-semibold">
                             Description:
@@ -72,7 +72,7 @@ const props = defineProps({
                         {{ props.projectDescription }}
                     </p>
                 </li>
-                <li class="mb-1">
+                <li class="mt-1">
                     <p>
                         <span class="font-semibold">
                             Technologies:
@@ -80,11 +80,12 @@ const props = defineProps({
                         {{ props.projectTechnologies }}
                     </p>
                 </li>
-                <li>
+                <li class="mt-1">
                     <p class="font-semibold">Responsibilities:</p>
                     <ul class="list-circle ml-8">
                         <li v-for="(responsibility, index) in props.projectResponsibilities" :key="index" :class="index && 'mt-1'">
                             {{ responsibility }}
+                            <p></p>
                         </li>
                     </ul>
                 </li>

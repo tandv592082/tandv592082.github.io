@@ -34,14 +34,14 @@ const CVSkillDetails = resolveComponent('CVSkillDetails');
                <p :key="index" v-for="(summary, index) in getPersonalSummaryKeys()" :class="index && 'mt-2'">{{ $t(`cv.summary.${summary}`) }}</p>
             </div>
         </CVTitle>
-        <CVTitle :title="$t('system.CVHeaderTitle.skills')">
+        <CVTitle :title="$t('system.CVHeaderTitle.skills')" class="mt-4">
             <ul class="list-disc pl-6">
                 <li v-for="(skill, index) of getSkillKeys()" :key="index">
                     <CVSkillDetails :skill-title="$t(`cv.skills.${skill}.title`)" :skill-details="$t(`cv.skills.${skill}.details`)" />
                 </li>
             </ul>
         </CVTitle>
-        <CVTitle :title="$t('system.CVHeaderTitle.experience')">
+        <CVTitle :title="$t('system.CVHeaderTitle.experience')" class="mt-4">
             <CVWorkInfo 
                 v-for="(work, index) in getExperienceKeys()"
                 :company-link="$t(`cv.workExperience.${work}.company.link`)"
@@ -53,10 +53,11 @@ const CVSkillDetails = resolveComponent('CVSkillDetails');
                 :project-description="$t(`cv.workExperience.${work}.project.description`)"
                 :project-technologies="$t(`cv.workExperience.${work}.project.technologies`)"
                 :project-responsibilities="getRespTransalteByIndex(work, $t)"
+                :class="index && 'mt-4'"
                  />
         </CVTitle>
 
-        <CVTitle :title="$t('system.CVHeaderTitle.education')">
+        <CVTitle :title="$t('system.CVHeaderTitle.education')" class="mt-4">
             <CVWorkInfo 
                 :company-name="$t('cv.education.university.name')" 
                 :company-address="$t('cv.education.university.address')"
@@ -64,7 +65,7 @@ const CVSkillDetails = resolveComponent('CVSkillDetails');
                 :work-period="$t('cv.education.information.period')" />
         </CVTitle>
 
-        <CVTitle :title="$t('system.CVHeaderTitle.additionalInformation')">
+        <CVTitle :title="$t('system.CVHeaderTitle.additionalInformation')" class="mt-4">
             <p v-for="info in getAdditionalInfoKeys()">{{ $t(`cv.additionalInformation.${info}`) }}</p>
         </CVTitle>
     </div>

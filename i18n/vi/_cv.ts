@@ -2,7 +2,7 @@ export default {
     persionalInfo: {
         fullname: 'Dương Văn Tân',
         position: 'Backend Engineer',
-        email: `tandv.jobs@gmail.com`,
+        email: `tandv.jobs{'@'}gmail.com`,
         phone: '0352872240',
         linkedin: 'https://www.linkedin.com/in/tan-duong-van-106789126/'
     },
@@ -88,6 +88,7 @@ export default {
             company: {
                 name: 'ABAGold',
                 address: 'Hoàng Quốc Việt, Hà Nội',
+                link: `{'#'}`
             },
             job: {
                 position: 'Frontend Developer',

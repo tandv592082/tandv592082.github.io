@@ -13,11 +13,11 @@ const CVThemeSwitcher = resolveComponent('CVThemeSwitcher');
             <CVLangSwitcher class="mr-5"/>
             <CVThemeSwitcher />
         </header>
-        <main :id="CVLayoutId" class="mx-auto content w-prose px-4 py-1 rounded-md pt-12">
+        <main :id="CVLayoutId" class="mx-auto content w-prose px-4 py-1 rounded-md pt-12 <sm:w-full <sm:text-sm">
             <slot />
         </main>
         <footer class="h-12 mt-20 flex justify-center items-center bg-white dark:bg-dark-800 w-full border-t border-gray-100 dark:border-gray-800">
-            <p class="text-sm">{{ $t('system.footer.intro') }}</p>
+            <p class="text-sm text-center">{{ $t('system.footer.intro') }}</p>
         </footer>
     </div>
 </template>

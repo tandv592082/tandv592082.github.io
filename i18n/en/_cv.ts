@@ -58,8 +58,8 @@ export default {
             },
             project: {
                 title: 'X Bus and Drone in a Box (DIB) WebService.',
-                description: 'Cả X Bus và DIB Web Service là hệ thống giúp thống kê dữ liệu, quản lý và ra lệnh cho các Robot thời gian thực.',
-                technologies: 'Nodejs, MongoDB, Redis, Docker, MQTT, React Native, Vuejs',
+                description: 'Both X Bus and DIB Web Service are systems that help to collect data, manage and give commands to the real-time robot system.',
+                technologies: 'Nodejs, MongoDB, Redis, Docker, MQTT, React Native, Vuejs.',
                 responsibilities: {
                     0: `Developed and deployed WebService system for monitoring and controlling self-driving cars and drones, ensuring smooth communication between the systems and the control center`,
                     1: `Implemented communication between the backend and Robot Operating System (ROS) to exchange data and control signals using MQTT protocol.`,
@@ -79,7 +79,7 @@ export default {
                 period: '02/2019 - 02/2021',
             },
             project: {
-                title: 'FADI WebService',
+                title: 'FADI Web Service.',
                 description: 'A system that helps to link and track customer contact data from WordPress pages, as well as improve the workflow of the company.',
                 technologies: 'Nodejs, MongoDB, Docker, ReactJS, VueJS, Wordpress.',
                 responsibilities: {
@@ -101,12 +101,12 @@ export default {
                 period: '08/2018 - 02/2019',
             },
             project: {
-                title: 'ABAGolf, Feeby',
+                title: 'ABAGolf, Feeby.',
                 description: 'ABAGolf is a golf application designed for golf players, which helps organize tournaments and view scores in real-time, automatically calculate handicaps, book golf courses, and create chat groups. Feeby is an application that allows customers to review and receive discount codes after using the services of a store.',
                 technologies: 'Nodejs, MongoDB, Vuejs, React Native, Bootstrap.',
                 responsibilities: {
                     0: `Developed an app interface based on Figma design using React Native.`,
-                    1: `Implemented Redux for state management and integrated with RESTful APIs for data retrieval.`,
+                    1: `Implemented Redux for state management and integrated with RESTf API for data retrieval.`,
                     2: `Building interface components for the user's review management page using Bootstrap and Vuejs.`,
                 }
             }

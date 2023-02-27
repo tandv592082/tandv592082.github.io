@@ -51,9 +51,9 @@ export default {
                 period: '06/2021 - Hiện tại',
             },
             project: {
-                title: 'Triển khai các ứng dụng theo dõi, điều khiển và web service cho xe tự lại và máy bay không người lại ',
+                title: 'X Bus và Drone in a Box (DIB) Web Service.',
                 description: 'Triển khai các ứng dụng theo dõi, điều khiển và web service cho xe tự lại và máy bay không người lại',
-                technologies: 'Spring Boot, MongoDB, Redis, Docker, Vuejs, ReactJs',
+                technologies: 'Nodejs, MongoDB, Redis, Docker, MQTT, React Native, Vuejs.',
                 responsibilities: {
                     0: `Developed and deployed WebService system for monitoring and controlling self-driving cars and drones, ensuring smooth communication between the systems and the control center`,
                     1: `Triển khai giao tiếp giữa hệ thống backend và ROS thông qua giao thức MQTT.`,
@@ -73,9 +73,9 @@ export default {
                 period: '02/2019 - 02/2021',
             },
             project: {
-                title: 'FADI WebService',
+                title: 'FADI Web Service',
                 description: 'A system that helps to link and track customer contact data from WordPress pages, as well as improve the workflow of the company.',
-                technologies: 'Nodejs, MongoDB, Docker, ReactJS, VueJS, Wordpress',
+                technologies: 'Nodejs, MongoDB, Docker, ReactJS, VueJS, Wordpress.',
                 responsibilities: {
                     0: `Developed and deployed WebService system for monitoring and controlling self-driving cars and drones, ensuring smooth communication between the systems and the control center`,
                     1: `Implemented communication between the backend and Robot Operating System (ROS) to exchange data and control signals using MQTT protocol.`,
@@ -95,12 +95,12 @@ export default {
                 period: '08/2018 - 02/2019',
             },
             project: {
-                title: 'ABAGolf, Feeby',
+                title: 'ABAGolf, Feeby.',
                 description: 'ABAGolf là ứng dụng dành cho người chơi gôn, nó giúp tổ chức giải và xem điểm trực tiếp,  tính HDC tự động, đặt sân gôn và có thể tạo nhóm trò chuyện. Feeby là ứng dụng giúp  khách hàng đánh giá và nhận mã khuyến mãi sau khi sử dụng dịch vụ của cửa hàng.',
                 technologies: 'Nodejs, MongoDB, Vuejs, React Native, Bootstrap.',
                 responsibilities: {
                     0: `Phát triển giao diện ứng dụng dựa trên Figma sử dụng React Native.`,
-                    1: `Triển khai Redux để quản lý trạng thái và tích hợp với API RESTful để truy xuất dữ liệu.`,
+                    1: `Triển khai Redux để quản lý trạng thái và tích hợp với REST API để truy xuất dữ liệu.`,
                     2: `Xây dựng các thành phần giao diện trang quản lý đánh giá của người dùng sử dụng Bootstrap và Vuejs.`,
                 }
             }

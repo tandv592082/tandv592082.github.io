@@ -17,31 +17,34 @@ export default {
     },
     skills: {
         0: {
-            title: `Backend development`,
-            details: 'Java, Spring Boot',
+            title: `Programming Languages`,
+            details: 'JavaScript(4+ years), Java(1+ year)',
         },
         1: {
-            title: `Backend development`,
-            details: 'Java, Spring Boot',
+            title: `Database Management System`,
+            details: 'MongoDB, MySQL',
         },
         2: {
-            title: `Backend development`,
-            details: 'Java, Spring Boot',
+            title: `Frameworks/Platforms`,
+            details: 'NodeJS, Docker, Redis, ReactJS, React Native, VueJS, JQuery, WebSocket, Wordpress.',
         },
         3: {
-            title: `Backend development`,
-            details: 'Java, Spring Boot',
+            title: `Version Control`,
+            details: 'Git, SVN.',
         },
         4: {
-            title: `Backend development`,
-            details: 'Java, Spring Boot',
+            title: `IoT`,
+            details: 'MQTT, ROS comunication.',
         },
         5: {
-            title: `Backend development`,
-            details: 'Java, Spring Boot',
+            title: `Operating system`,
+            details: 'Linux, VPS, Linux server, Window.',
         },
         6: {
-            details: 'Java, Spring Boot',
+            details: 'Familiar with Agile/Scrum development methodologies.',
+        },
+        7: {
+            details: 'Mentoring and code reviews',
         },
     },
     workExperience: {
@@ -56,7 +59,7 @@ export default {
                 period: '06/2021 - Present',
             },
             project: {
-                title: 'X Bus and Drone in a Box (DIB) WebService.',
+                title: 'X Bus and Drone in a Box (DIB) Web Service.',
                 description: 'Both X Bus and DIB Web Service are systems that help to collect data, manage and give commands to the real-time robot system.',
                 technologies: 'Nodejs, MongoDB, Redis, Docker, MQTT, React Native, Vuejs.',
                 responsibilities: {

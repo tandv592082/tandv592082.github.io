@@ -12,31 +12,34 @@ export default {
     },
     skills: {
         0: {
-            title: `Backend development`,
-            details: 'Java, Spring Boot',
+            title: `Ngỗn ngữ lập trình`,
+            details: 'JavaScript(hơn 4 năm), Java(Hơn 1 năm)',
         },
         1: {
-            title: `Backend development`,
-            details: 'Java, Spring Boot',
+            title: `Hệ thống quản lý cơ sở dữ liệu`,
+            details: 'MongoDB, MySQL',
         },
         2: {
-            title: `Backend development`,
-            details: 'Java, Spring Boot',
+            title: `Frameworks/Platforms`,
+            details: 'NodeJS, Docker, Redis, ReactJS, React Native, VueJS, JQuery, WebSocket, Wordpress.',
         },
         3: {
-            title: `Backend development`,
-            details: 'Java, Spring Boot',
+            title: `Version Control`,
+            details: 'Git, SVN.',
         },
         4: {
-            title: `Backend development`,
-            details: 'Java, Spring Boot',
+            title: `IoT`,
+            details: 'MQTT, giao tiếp với hệ thống ROS.',
         },
         5: {
-            title: `Backend development`,
-            details: 'Java, Spring Boot',
+            title: `Hệ điều hành`,
+            details: 'Linux, VPS, Linux server, Window.',
         },
         6: {
-            details: 'Java, Spring Boot',
+            details: 'Quen thuộc với các phương pháp phát triển Agile/Scrum.',
+        },
+        7: {
+            details: 'Cố vấn và đánh giá chất lượng code.',
         },
     },
     workExperience: {

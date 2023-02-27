@@ -50,7 +50,7 @@ const props = defineProps({
             <a v-if="props.companyLink" :href="props.companyLink"  class=" dark:text-white italic" :target="props.companyLink === '#' ? '_self' : '_blank'" rel="noopener">
                 {{ props.companyName }}
             </a>
-            <p v-else class="font-semibold italic">
+            <p v-else class="italic">
                 {{ props.companyName }}
             </p>
             <p class="italic">{{ props.companyAddress }}</p>

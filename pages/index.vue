@@ -32,13 +32,20 @@ const { isLoading } = useSavePDF();
     <div class="w-full">
         <CVTitle :title="$t('system.CVHeaderTitle.summary')">
             <div>
-               <p :key="index" v-for="(summary, index) in getPersonalSummaryKeys()" :class="index && 'mt-2'">{{ $t(`cv.summary.${summary}`) }}</p>
+               <p 
+                    :key="index" 
+                    v-for="(summary, index) in getPersonalSummaryKeys()" 
+                    :class="index && 'mt-2'">{{ $t(`cv.summary.${summary}`) }}</p>
             </div>
         </CVTitle>
         <CVTitle :title="$t('system.CVHeaderTitle.skills')" class="mt-4">
             <ul class="list-disc pl-6">
-                <li v-for="(skill, index) of getSkillKeys()" :key="index">
-                    <CVSkillDetails :skill-title="$t(`cv.skills.${skill}.title`)" :skill-details="$t(`cv.skills.${skill}.details`)" />
+                <li 
+                    v-for="(skill, index) of getSkillKeys()" 
+                    :key="index">
+                    <CVSkillDetails 
+                        :skill-title="!$t(`cv.skills.${skill}.title`).startsWith('cv.skills') ? $t(`cv.skills.${skill}.title`) : undefined" 
+                        :skill-details="$t(`cv.skills.${skill}.details`)" />
                 </li>
             </ul>
         </CVTitle>
@@ -66,13 +73,20 @@ const { isLoading } = useSavePDF();
                 :work-period="$t('cv.education.information.period')" />
         </CVTitle>
 
-        <CVTitle :title="$t('system.CVHeaderTitle.additionalInformation')" class="mt-4">
-            <p v-for="info in getAdditionalInfoKeys()">{{ $t(`cv.additionalInformation.${info}`) }}</p>
+        <CVTitle 
+                :title="$t('system.CVHeaderTitle.additionalInformation')" 
+                class="mt-4">
+            <p 
+                v-for="info in getAdditionalInfoKeys()">
+                {{ $t(`cv.additionalInformation.${info}`) }}
+            </p>
         </CVTitle>
         
-        <div class="text-sm flex justify-between mt-10" v-if="isLoading">
-            <p >{{now()}}</p>
-            <p> {{ $t('system.messages.savePDF.autogen') }}</p>
+        <div 
+            class="text-sm flex justify-between mt-10" 
+            v-if="isLoading">
+                <p >{{now()}}</p>
+                <p> {{ $t('system.messages.savePDF.autogen') }}</p>
         </div>
     </div>
 </template>

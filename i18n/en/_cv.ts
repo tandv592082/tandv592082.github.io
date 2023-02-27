@@ -41,7 +41,6 @@ export default {
             details: 'Java, Spring Boot',
         },
         6: {
-            title: `Backend development`,
             details: 'Java, Spring Boot',
         },
     },

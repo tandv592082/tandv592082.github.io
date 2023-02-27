@@ -23,15 +23,15 @@ export default {
             additionalInformation: 'additional information'
         },
         CVWorkDetails: {
-            project: 'project',
-            description: 'description',
-            technologies: 'technologies',
-            responsibilities: 'responsibilities'
+            project: 'Project',
+            description: 'Description',
+            technologies: 'Technologies',
+            responsibilities: 'Responsibilities'
         },
         messages: {
             savePDF: {
                 error: 'ERROR',
-                errorMgs: 'Something went wrong!',
+                errorMsg: 'Something went wrong!',
                 changeThemeDark: 'Switching to dark mode...',
                 changeThemeLight: 'Switching to light mode...',
                 'changeLang-vi': 'Switching language to Vietnamese...',

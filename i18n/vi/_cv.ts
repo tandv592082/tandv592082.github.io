@@ -83,7 +83,7 @@ export default {
             },
             project: {
                 title: 'FADI Web Service.',
-                description: 'A system that helps to link and track customer contact data from WordPress pages, as well as improve the workflow of the company.',
+                description: 'Một hệ thống giúp liên kết và theo dõi dữ liệu liên hệ của khách hàng từ các trang WordPress, cũng như cải thiện quy trình làm việc của công ty.',
                 technologies: 'Nodejs(Express), MongoDB, Docker, VueJS & VueX, Wordpress, Webpack.',
                 responsibilities: {
                     0: `Xây dựng cấu ​​trúc, quy ước viết code cho các dự án front-end và back-end (bao gồm linter, unit test, build script bằng Docker).`,

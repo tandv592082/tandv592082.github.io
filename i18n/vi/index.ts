@@ -31,7 +31,7 @@ export default {
         messages: {
             savePDF: {
                 error: 'Lỗi',
-                errorMgs: 'Có lỗi xảy ra',
+                errorMsg: 'Có lỗi xảy ra',
                 changeThemeDark: 'Đang thay đổi sang chế độ tối...',
                 changeThemeLight: 'Đang thay đổi sang chế độ sáng...',
                 'changeLang-vi': 'Thay đổi sang ngôn ngữ sang tiếng Việt...',

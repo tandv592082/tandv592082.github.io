@@ -8,6 +8,30 @@ const opts = {
 const getPdfOptions = (lang: string) => ({
     ...opts,
     filename: lang === 'vi' ? 'DUONG_VAN_TAN_CV_vi.pdf' : 'TAN_DUONG_VAN_CV_en.pdf',
-})
+});
+
+const pageBreakSettings = {
+    vi: [28],
+    en: [29]
+}
+
+
+
+const insertBefore = (refNode: any) => {
+    const div = document.createElement("div");
+    div.className = 'html2pdf__page-break';
+    refNode.before(div);
+}
+
+export const removeAllPageBreakElms = () => window?.document && window.document.querySelectorAll(".html2pdf__page-break").forEach(e => e.remove());
+
+export const appendPageBreak = (lang: string) => {
+    // @ts-ignore
+    const positions = pageBreakSettings[`${lang}`];
+    console.log(positions);
+    const pElms = document.querySelectorAll('p');
+    pElms.forEach((p, index) => positions.includes(index) && insertBefore(p))
+
+}
 
 export default getPdfOptions;

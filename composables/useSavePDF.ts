@@ -4,6 +4,7 @@ import { useLang } from './useLang';
 import getPdfOptions from '~~/configs/pdf.config';
 import { wait } from '~~/utils/fn';
 import { THEME_MODE } from '~~/enums/setting';
+import { appendPageBreak, removeAllPageBreakElms } from '~~/configs/pdf.config';
 
 const isLoading = ref(false);
 const message = ref<String | null>(null);
@@ -20,6 +21,7 @@ export const useSavePDF = () => {
             
             const tempTheme: THEME_MODE = currentTheme.value;
             const tempLang = locale.value;
+            appendPageBreak(lang);
 
             // changing theme to dark and language to specific input language
             if (tempTheme === 'dark') {
@@ -46,6 +48,7 @@ export const useSavePDF = () => {
             if (tempLang !== locale.value) {
                 message.value = t(`system.messages.savePDF.changeLang-${tempLang}`);
                 switchLanguage(tempLang);
+                removeAllPageBreakElms();
             }
 
             message.value = null

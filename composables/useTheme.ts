@@ -16,7 +16,6 @@ export const useTheme = () => {
 
     const initialzeTheme = () => {
         const localTheme = Storage.load(THEME_KEY) as THEME_MODE;
-        console.log(localTheme);
         currentTheme.value = localTheme || defaultTheme;
     }
 

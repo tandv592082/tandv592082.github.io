@@ -11,6 +11,6 @@ export const useLang = () => {
     }
 
     return {
-        switchLanguage
+        switchLanguage, 
     }
 }

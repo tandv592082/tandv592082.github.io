@@ -1,5 +1,6 @@
 <template>
-    <div>
+    <div class="flex items-center">
+        <p v-if="message" :class="[isErrorMsg() && 'text-red-600 dark:text-red-400', 'text-sm mr-2']">{{ message }}</p>
         <Menu as="div" class="relative inline-block text-left" v-if="!isLoading">
             <div>
                 <MenuButton
@@ -22,7 +23,7 @@
                     </div>
 
                     <div class="px-1 py-1">
-                        <MenuItem v-for=" menu , index in i18nMenus" :key="menu.lang" @click="downloadPdfCV()" class=" my-1 ">
+                        <MenuItem v-for=" menu , index in i18nMenus" :key="menu.lang" @click="downloadPdfCV(menu.lang)" class=" my-1 ">
                         <button :class="[
                             index && 'mt-1','text-gray-700 dark:text-gray-200 group flex w-full items-center rounded-md px-2 py-2 text-sm hover:text-black dark:hover:text-white hover:bg-gray-100 dark:hover:bg-dark-400 transition-all duration-75',
                         ]">
@@ -43,6 +44,6 @@ import { Menu, MenuButton, MenuItems, MenuItem } from '@headlessui/vue';
 import { i18nMenus } from '~~/i18n';
 import { useSavePDF } from '~~/composables/useSavePDF';
 
-const { isLoading, downloadPdfCV } = useSavePDF();
+const { isLoading, downloadPdfCV, message, isErrorMsg } = useSavePDF();
 </script>
   

@@ -1,0 +1,1 @@
+const now = (): String => new Date().toLocaleString();

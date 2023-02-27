@@ -1,4 +1,5 @@
 <script lang="ts" setup>
+import { CVLayoutId } from '~~/enums/app'
 const CVLangSwitcher = resolveComponent('CVLangSwitcher');
 const CVDownload = resolveComponent('CVDownload');
 const CVThemeSwitcher = resolveComponent('CVThemeSwitcher');
@@ -6,14 +7,17 @@ const CVThemeSwitcher = resolveComponent('CVThemeSwitcher');
 
 
 <template>
-    <div class="container mx-auto mb-10">
-        <div class="h-12 flex justify-end items-center fixed bg-white dark:bg-dark-800 w-full container <sm:justify-center">
+    <div class="container mx-auto">
+        <header class="h-12 backdrop-filter backdrop-blur-sm flex justify-end items-center  fixed bg-white dark:bg-dark-800 w-full !bg-opacity-50 container <sm:justify-center ">
             <CVDownload class="mr-5"/>
             <CVLangSwitcher class="mr-5"/>
             <CVThemeSwitcher />
-        </div>
-        <div id="__cv" class="mx-auto content w-prose px-4 py-1 rounded-md pt-12">
+        </header>
+        <main :id="CVLayoutId" class="mx-auto content w-prose px-4 py-1 rounded-md pt-12">
             <slot />
-        </div>
+        </main>
+        <footer class="h-12 mt-20 flex justify-center items-center bg-white dark:bg-dark-800 w-full border-t border-gray-100 dark:border-gray-800">
+            <p class="text-sm">{{ $t('system.footer.intro') }}</p>
+        </footer>
     </div>
 </template>

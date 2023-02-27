@@ -1,5 +1,3 @@
-import { THEME_MODE } from "~~/enums/setting";
-
 const opts = {
     margin: [25, 0, 25, 0],
     image: { type: 'jpeg', quality: 1},

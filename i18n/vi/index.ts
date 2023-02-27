@@ -27,11 +27,28 @@ export default {
             description: 'mô tả',
             technologies: 'công nghệ sử dụng',
             responsibilities: 'Trách nhiệm'
+        },
+        messages: {
+            savePDF: {
+                error: 'Lỗi',
+                errorMgs: 'Có lỗi xảy ra',
+                changeThemeDark: 'Đang thay đổi sang chế độ tối...',
+                changeThemeLight: 'Đang thay đổi sang chế độ sáng...',
+                'changeLang-vi': 'Thay đổi sang ngôn ngữ sang tiếng Việt...',
+                'changeLang-en': 'Thay đổi sang ngôn ngữ sang tiếng Anh...',
+                autogen: 'CV này được tạo tự động bởi hệ thống.'
+            }
+        },
+        footer: {
+            intro: 'Powered by Nuxt3. Designed by me'
         }
 
     },
     app: {
         name: `Dương Văn Tân`,
-        content: `Dương Văn Tân`
+        content: `Dương Văn Tân`,
+        footer: {
+            
+        }
     }
 }

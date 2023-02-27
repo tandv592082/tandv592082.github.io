@@ -12,7 +12,6 @@ const isLoading = ref(false);
 const message = ref<String | null>(null);
 
 export const useSavePDF = () => {
-    const { $savePDF } = useNuxtApp();
     const { locale, t } = useI18n();
     const { currentTheme, setTheme } = useTheme();
      const { switchLanguage } = useLang();
@@ -35,7 +34,7 @@ export const useSavePDF = () => {
             if (locale.value !== lang) {
                 message.value = t(`system.messages.savePDF.changeLang-${lang}`);
                 switchLanguage(lang);
-                await wait(2000);
+                await wait(500);
             }
 
             const opts = getPdfOptions(lang);

@@ -1,4 +1,5 @@
 <script lang="ts" setup>
+import { now } from '~~/utils/date'
 import {getExperienceKeys, getPersonalSummaryKeys, getRespTransalteByIndex, getSkillKeys, getAdditionalInfoKeys} from '~/i18n'
 
 definePageMeta({
@@ -10,6 +11,7 @@ const CVTitle = resolveComponent('CVTitle');
 const CVContactInfo = resolveComponent('CVContactInfo');
 const CVWorkInfo = resolveComponent('CVWorkInfo');
 const CVSkillDetails = resolveComponent('CVSkillDetails');
+const { isLoading } = useSavePDF();
 
 </script>
 
@@ -67,5 +69,10 @@ const CVSkillDetails = resolveComponent('CVSkillDetails');
         <CVTitle :title="$t('system.CVHeaderTitle.additionalInformation')" class="mt-4">
             <p v-for="info in getAdditionalInfoKeys()">{{ $t(`cv.additionalInformation.${info}`) }}</p>
         </CVTitle>
+        
+        <div class="text-sm flex justify-between mt-10" v-if="isLoading">
+            <p >{{now()}}</p>
+            <p> {{ $t('system.messages.savePDF.autogen') }}</p>
+        </div>
     </div>
 </template>

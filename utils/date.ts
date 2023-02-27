@@ -1,1 +1,1 @@
-const now = (): String => new Date().toLocaleString();
+export const now = (): String => new Date().toLocaleString();

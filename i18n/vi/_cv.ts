@@ -73,36 +73,35 @@ export default {
                 period: '02/2019 - 02/2021',
             },
             project: {
-                title: 'Reseach and develop control application and webservice for self-driving car and drone',
-                description: 'Reseach and develop control application and webservice for self-driving car and drone',
-                technologies: 'Spring Boot, MongoDB, Redis, Docker, Vuejs, ReactJs',
+                title: 'FADI WebService',
+                description: 'A system that helps to link and track customer contact data from WordPress pages, as well as improve the workflow of the company.',
+                technologies: 'Nodejs, MongoDB, Docker, ReactJS, VueJS, Wordpress',
                 responsibilities: {
                     0: `Developed and deployed WebService system for monitoring and controlling self-driving cars and drones, ensuring smooth communication between the systems and the control center`,
                     1: `Implemented communication between the backend and Robot Operating System (ROS) to exchange data and control signals using MQTT protocol.`,
                     2: `Improved application performance by optimizing database queries and implementing caching mechanisms`,
-                    3: `Implemented industry best practices, such as data validation and error handling, to ensure the reliability and security of the applications.`
+                    3: `Optimize the interface and system of the company's WordPress website.`
                 }
             }
         },
         2: {
             company: {
-                name: 'ABAGold',
+                name: 'ABAGolf',
                 address: 'Hoàng Quốc Việt, Hà Nội',
                 link: `{'#'}`
             },
             job: {
                 position: 'Frontend Developer',
-                period: '02/2019 - 02/2021',
+                period: '08/2018 - 02/2019',
             },
             project: {
-                title: 'Reseach and develop control application and webservice for self-driving car and drone',
-                description: 'Reseach and develop control application and webservice for self-driving car and drone',
-                technologies: 'Spring Boot, MongoDB, Redis, Docker, Vuejs, ReactJs',
+                title: 'ABAGolf, Feeby',
+                description: 'ABAGolf là ứng dụng dành cho người chơi gôn, nó giúp tổ chức giải và xem điểm trực tiếp,  tính HDC tự động, đặt sân gôn và có thể tạo nhóm trò chuyện. Feeby là ứng dụng giúp  khách hàng đánh giá và nhận mã khuyến mãi sau khi sử dụng dịch vụ của cửa hàng.',
+                technologies: 'Nodejs, MongoDB, Vuejs, React Native, Bootstrap.',
                 responsibilities: {
-                    0: `Developed and deployed WebService system for monitoring and controlling self-driving cars and drones, ensuring smooth communication between the systems and the control center`,
-                    1: `Implemented communication between the backend and Robot Operating System (ROS) to exchange data and control signals using MQTT protocol.`,
-                    2: `Improved application performance by optimizing database queries and implementing caching mechanisms`,
-                    3: `Implemented industry best practices, such as data validation and error handling, to ensure the reliability and security of the applications.`
+                    0: `Phát triển giao diện ứng dụng dựa trên Figma sử dụng React Native.`,
+                    1: `Triển khai Redux để quản lý trạng thái và tích hợp với API RESTful để truy xuất dữ liệu.`,
+                    2: `Xây dựng các thành phần giao diện trang quản lý đánh giá của người dùng sử dụng Bootstrap và Vuejs.`,
                 }
             }
         }

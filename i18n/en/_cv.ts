@@ -57,9 +57,9 @@ export default {
                 period: '06/2021 - Present',
             },
             project: {
-                title: 'Reseach and develop control application and webservice for self-driving car and drone',
-                description: 'Reseach and develop control application and webservice for self-driving car and drone',
-                technologies: 'Spring Boot, MongoDB, Redis, Docker, Vuejs, ReactJs',
+                title: 'X Bus and Drone in a Box (DIB) WebService.',
+                description: 'Cả X Bus và DIB Web Service là hệ thống giúp thống kê dữ liệu, quản lý và ra lệnh cho các Robot thời gian thực.',
+                technologies: 'Nodejs, MongoDB, Redis, Docker, MQTT, React Native, Vuejs',
                 responsibilities: {
                     0: `Developed and deployed WebService system for monitoring and controlling self-driving cars and drones, ensuring smooth communication between the systems and the control center`,
                     1: `Implemented communication between the backend and Robot Operating System (ROS) to exchange data and control signals using MQTT protocol.`,
@@ -79,36 +79,35 @@ export default {
                 period: '02/2019 - 02/2021',
             },
             project: {
-                title: 'Reseach and develop control application and webservice for self-driving car and drone',
-                description: 'Reseach and develop control application and webservice for self-driving car and drone',
-                technologies: 'Spring Boot, MongoDB, Redis, Docker, Vuejs, ReactJs',
+                title: 'FADI WebService',
+                description: 'A system that helps to link and track customer contact data from WordPress pages, as well as improve the workflow of the company.',
+                technologies: 'Nodejs, MongoDB, Docker, ReactJS, VueJS, Wordpress.',
                 responsibilities: {
                     0: `Developed and deployed WebService system for monitoring and controlling self-driving cars and drones, ensuring smooth communication between the systems and the control center`,
                     1: `Implemented communication between the backend and Robot Operating System (ROS) to exchange data and control signals using MQTT protocol.`,
                     2: `Improved application performance by optimizing database queries and implementing caching mechanisms`,
-                    3: `Implemented industry best practices, such as data validation and error handling, to ensure the reliability and security of the applications.`
+                    3: `Refactor the interface and optimizing the loading speed of the company's WordPress website. Linking user contact data with the backend through API.`
                 }
             }
         },
         2: {
             company: {
-                name: 'ABAGold',
+                name: 'ABAGolf',
                 address: 'Hoang Quoc Viet, Ha Noi',
                 link: `{'#'}`
             },
             job: {
-                position: 'Web Application Developer',
-                period: '02/2019 - 02/2021',
+                position: 'Frontend Developer',
+                period: '08/2018 - 02/2019',
             },
             project: {
-                title: 'Reseach and develop control application and webservice for self-driving car and drone',
-                description: 'Reseach and develop control application and webservice for self-driving car and drone',
-                technologies: 'Spring Boot, MongoDB, Redis, Docker, Vuejs, ReactJs',
+                title: 'ABAGolf, Feeby',
+                description: 'ABAGolf is a golf application designed for golf players, which helps organize tournaments and view scores in real-time, automatically calculate handicaps, book golf courses, and create chat groups. Feeby is an application that allows customers to review and receive discount codes after using the services of a store.',
+                technologies: 'Nodejs, MongoDB, Vuejs, React Native, Bootstrap.',
                 responsibilities: {
-                    0: `Developed and deployed WebService system for monitoring and controlling self-driving cars and drones, ensuring smooth communication between the systems and the control center`,
-                    1: `Implemented communication between the backend and Robot Operating System (ROS) to exchange data and control signals using MQTT protocol.`,
-                    2: `Improved application performance by optimizing database queries and implementing caching mechanisms`,
-                    3: `Implemented industry best practices, such as data validation and error handling, to ensure the reliability and security of the applications.`
+                    0: `Developed an app interface based on Figma design using React Native.`,
+                    1: `Implemented Redux for state management and integrated with RESTful APIs for data retrieval.`,
+                    2: `Building interface components for the user's review management page using Bootstrap and Vuejs.`,
                 }
             }
         }

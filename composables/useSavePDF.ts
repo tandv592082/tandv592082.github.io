@@ -5,6 +5,8 @@ import getPdfOptions from '~~/configs/pdf.config';
 import { wait } from '~~/utils/fn';
 import { THEME_MODE } from '~~/enums/setting';
 import { appendPageBreak, removeAllPageBreakElms } from '~~/configs/pdf.config';
+// @ts-ignore
+import html2pdf from 'html2pdf.js';
 
 const isLoading = ref(false);
 const message = ref<String | null>(null);
@@ -33,11 +35,12 @@ export const useSavePDF = () => {
             if (locale.value !== lang) {
                 message.value = t(`system.messages.savePDF.changeLang-${lang}`);
                 switchLanguage(lang);
-                await wait(500);
+                await wait(2000);
             }
 
             const opts = getPdfOptions(lang);
-            await $savePDF().set(opts).save();
+            const element = document.getElementById('__cv');
+            await html2pdf().from(element).set(opts).save();
 
             //return theme and current user's language
             if (tempTheme === 'dark') {

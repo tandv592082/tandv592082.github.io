@@ -59,7 +59,7 @@ const props = defineProps({
         <div class="mt-3" v-if="props.projectName">
             <p>
                 <span class="font-semibold">
-                    Project:
+                    {{ $t('system.CVWorkDetails.project') }}:
                 </span>
                 {{ props.projectName }}
             </p>
@@ -67,7 +67,7 @@ const props = defineProps({
                 <li class="mt-1">
                     <p>
                         <span class="font-semibold">
-                            Description:
+                            {{ $t('system.CVWorkDetails.description') }}:
                         </span>
                         {{ props.projectDescription }}
                     </p>
@@ -75,13 +75,13 @@ const props = defineProps({
                 <li class="mt-1">
                     <p>
                         <span class="font-semibold">
-                            Technologies:
+                            {{ $t('system.CVWorkDetails.technologies') }}:
                         </span>
                         {{ props.projectTechnologies }}
                     </p>
                 </li>
                 <li class="mt-1">
-                    <p class="font-semibold">Responsibilities:</p>
+                    <p class="font-semibold">{{ $t('system.CVWorkDetails.responsibilities') }}:</p>
                     <ul class="list-circle ml-8">
                         <li v-for="(responsibility, index) in props.projectResponsibilities" :key="index" :class="index && 'mt-1'">
                             {{ responsibility }}

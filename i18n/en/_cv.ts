@@ -82,6 +82,7 @@ export default {
                 period: '02/2019 - 02/2021',
             },
             project: {
+                
                 title: 'FADI Web Service.',
                 description: 'A system that helps to link and track customer contact data from WordPress pages, as well as improve the workflow of the company.',
                 technologies: 'Nodejs(Express), MongoDB, Docker, VueJS & VueX, Wordpress, Webpack.',

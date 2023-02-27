@@ -23,9 +23,9 @@ export default {
             additionalInformation: 'Thông tin thêm'
         },
         CVWorkDetails: {
-            project: 'dự án',
-            description: 'mô tả',
-            technologies: 'công nghệ sử dụng',
+            project: 'Dự án',
+            description: 'Mô tả',
+            technologies: 'Công nghệ sử dụng',
             responsibilities: 'Trách nhiệm'
         },
         messages: {

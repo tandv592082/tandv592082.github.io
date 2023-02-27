@@ -87,7 +87,7 @@ export default {
                 technologies: 'Nodejs(Express), MongoDB, Docker, VueJS & VueX, Wordpress, Webpack.',
                 responsibilities: {
                     0: `Xây dựng cấu ​​trúc, quy ước viết code cho các dự án front-end và back-end (bao gồm linter, unit test, build script bằng Docker).`,
-                    1: `Giao tiếp với cấp trên để thiết kế và xây dựng hệ thống back-end để tối ưu hóa quy trình làm việc của công ty.`,
+                    1: `Giao tiếp với cấp trên để thiết kế và xây dựng hệ thống back-end nhằm tối ưu hóa quy trình làm việc của công ty.`,
                     2: `Thiết kế lược đồ cơ sở dữ liệu và triển khai các module chính của phía back-end.`,
                     3: `Cấu trúc lại hệ thống giao diện và tối ưu hóa tốc độ tải WordPress của công ty. Liên kế dữ liệu liên hệ của người dùng thông qua API.`
                 }
@@ -104,6 +104,7 @@ export default {
                 period: '08/2018 - 02/2019',
             },
             project: {
+               
                 title: 'ABAGolf, Feeby.',
                 description: 'ABAGolf là ứng dụng dành cho người chơi gôn, nó giúp tổ chức giải và xem điểm trực tiếp,  tính HDC tự động, đặt sân gôn và có thể tạo nhóm trò chuyện. Feeby là ứng dụng giúp  khách hàng đánh giá và nhận mã khuyến mãi sau khi sử dụng dịch vụ của cửa hàng.',
                 technologies: 'Nodejs(Express), MongoDB, Vuejs & VueX, React Native & Redux, Bootstrap.',

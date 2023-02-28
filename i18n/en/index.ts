@@ -40,7 +40,7 @@ export default {
             }
         },
         footer: {
-            intro: 'Powered by Nuxt3. Designed by me'
+            intro: `2023 - PRESENT {'@'} Tan Duong Van`
         }
 
     },

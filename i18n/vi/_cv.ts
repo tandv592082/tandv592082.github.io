@@ -36,7 +36,7 @@ export default {
             details: 'Linux, VPS, Linux server, Window.',
         },
         6: {
-            title: `Một số công cụ khác:`,
+            title: `Một số công cụ khác`,
             details: 'JIRA, Postman, Swagger.',
         },
         7: {

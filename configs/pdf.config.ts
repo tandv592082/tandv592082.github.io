@@ -11,8 +11,8 @@ const getPdfOptions = (lang: string) => ({
 });
 
 const pageBreakSettings = {
-    vi: [28],
-    en: [29]
+    vi: [30],
+    en: [31]
 }
 
 

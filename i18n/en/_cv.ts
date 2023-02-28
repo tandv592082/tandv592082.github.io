@@ -13,7 +13,7 @@ export default {
     skills: {
         0: {
             title: `Programming Languages`,
-            details: 'JavaScript(4+ years), Java(1+ year)',
+            details: 'JavaScript(4+ years), Python(1+ year)',
         },
         1: {
             title: `Database Management System`,
@@ -36,12 +36,16 @@ export default {
             details: 'Linux, VPS, Linux server, Window.',
         },
         6: {
-            details: 'Experience with RESTful API design and implementation.',
+            title: `Other tools:`,
+            details: 'JIRA, Postman, Swagger.',
         },
         7: {
-            details: 'Familiar with Agile/Scrum development methodologies.',
+            details: 'Experience with RESTful API design and implementation.',
         },
         8: {
+            details: 'Familiar with Agile/Scrum development methodologies.',
+        },
+        9: {
             details: 'Mentoring and code reviews',
         },
     },

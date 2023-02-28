@@ -13,7 +13,7 @@ export default {
     skills: {
         0: {
             title: `Ngỗn ngữ lập trình`,
-            details: 'JavaScript(hơn 4 năm), Java(Hơn 1 năm)',
+            details: 'JavaScript(4+ năm), Python(1+ năm)',
         },
         1: {
             title: `Hệ thống quản lý cơ sở dữ liệu`,
@@ -36,12 +36,16 @@ export default {
             details: 'Linux, VPS, Linux server, Window.',
         },
         6: {
-            details: 'Có kinh nghiệm thiết kế và triển khai RESTful API.',
+            title: `Một số công cụ khác:`,
+            details: 'JIRA, Postman, Swagger.',
         },
         7: {
-            details: 'Quen thuộc với các phương pháp phát triển Agile/Scrum.',
+            details: 'Có kinh nghiệm thiết kế và triển khai RESTful API.',
         },
         8: {
+            details: 'Quen thuộc với các phương pháp phát triển Agile/Scrum.',
+        },
+        9: {
             details: 'Cố vấn và đánh giá chất lượng code.',
         },
     },

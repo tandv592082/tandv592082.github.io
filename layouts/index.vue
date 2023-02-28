@@ -8,7 +8,7 @@ const CVThemeSwitcher = resolveComponent('CVThemeSwitcher');
 
 <template>
     <div class="container mx-auto">
-        <header class="h-12 backdrop-filter backdrop-blur-sm flex justify-end items-center  fixed bg-white dark:bg-dark-800 w-full !bg-opacity-50 container <sm:justify-center ">
+        <header class="h-12 backdrop-filter backdrop-blur-sm flex justify-end items-center top-0 fixed bg-white dark:bg-dark-800 w-full !bg-opacity-50 container <sm:justify-center ">
             <CVDownload class="mr-5 <sm:hidden"/>
             <CVLangSwitcher class="mr-5"/>
             <CVThemeSwitcher />

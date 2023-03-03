@@ -114,7 +114,7 @@ export default {
                 technologies: 'Nodejs(Express), MongoDB, Vuejs & VueX, React Native & Redux, Bootstrap.',
                 responsibilities: {
                     0: `Developed an app interface based on Figma design using React Native.`,
-                    1: `Implemented Redux for state management and integrated with RESTf API for data retrieval.`,
+                    1: `Implemented Redux for state management and integrated with REST API for data retrieval.`,
                     2: `Building interface components for the user's review management page using Bootstrap and Vuejs.`,
                 }
             }

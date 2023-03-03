@@ -7,6 +7,7 @@ export default defineNuxtConfig({
         '@nuxtjs/i18n',
         'nuxt-windicss',
         'nuxt-icon',
+        '@vite-pwa/nuxt'
     ],
     css: [ '~/assets/sass/app.scss' ],
     i18n: {

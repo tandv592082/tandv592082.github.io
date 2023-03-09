@@ -13,7 +13,7 @@ export default {
     skills: {
         0: {
             title: `Programming Languages`,
-            details: 'JavaScript(4+ years), Python(1+ year)',
+            details: 'JavaScript(4+ years), TypeScript(2+ years), Python(1+ year)',
         },
         1: {
             title: `Database Management System`,
@@ -126,7 +126,7 @@ export default {
             address: 'Cau Giay, Ha Noi'
         },
         information: {
-            degree: 'Bachelor of Information Technology',
+            degree: 'Major: Information Technology',
             period: '09/2013 – 07/2018'
         }
     },

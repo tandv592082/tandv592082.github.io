@@ -13,7 +13,7 @@ export default {
     skills: {
         0: {
             title: `Ngỗn ngữ lập trình`,
-            details: 'JavaScript(4+ năm), Python(1+ năm)',
+            details: 'JavaScript(4+ năm), TypeScript(2+ năm), Python(1+ năm)',
         },
         1: {
             title: `Hệ thống quản lý cơ sở dữ liệu`,
@@ -126,7 +126,7 @@ export default {
             address: 'Cầu Giấy, Hà Nội'
         },
         information: {
-            degree: 'Cử nhân Công Nghệ Thông Tin',
+            degree: 'Chuyên ngành: Công Nghệ Thông Tin',
             period: '09/2013 – 07/2018'
         }
     },

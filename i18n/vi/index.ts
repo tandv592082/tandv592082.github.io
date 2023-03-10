@@ -39,8 +39,10 @@ export default {
                 autogen: 'CV này được tạo tự động bởi hệ thống.'
             }
         },
+        lastUpdate: 'Ngày cập nhật: 10/03/2023',
         footer: {
-            intro: `2023 - PRESENT {'@'} Tan Duong Van`
+            intro: `2023 - PRESENT {'@'} TanDV`,
+            view: 'lượt xem'
         }
 
     },

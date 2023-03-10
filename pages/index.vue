@@ -82,6 +82,10 @@ const { isLoading } = useSavePDF();
             </p>
         </CVTitle>
         
+        <div class="flex justify-end mt-4">
+            <p class="text-sm">{{ $t('system.lastUpdate') }}</p>
+        </div>
+
         <div 
             class="text-sm flex justify-between mt-10" 
             v-if="isLoading">

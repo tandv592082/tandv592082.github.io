@@ -1,8 +1,10 @@
 <script lang="ts" setup>
+import increaseCountAsync from '~~/utils/counter-views'
 import { CVLayoutId } from '~~/enums/app'
 const CVLangSwitcher = resolveComponent('CVLangSwitcher');
 const CVDownload = resolveComponent('CVDownload');
 const CVThemeSwitcher = resolveComponent('CVThemeSwitcher');
+let info = ref<any>(null);
 
 const gotoGithubProfile = () => {
     const w =  window.open('https://github.com/tandv592082', '_blank');
@@ -10,6 +12,19 @@ const gotoGithubProfile = () => {
         w.focus();
     }
 }
+
+const countAPI = () => {
+    if(window?.location) {
+        return `https://api.countapi.xyz/hit/${window.location.host}/visits`;
+    }
+
+    return null;
+}
+
+onMounted(async () => {
+    info.value = await increaseCountAsync();
+})
+
 
 </script>
 
@@ -25,9 +40,12 @@ const gotoGithubProfile = () => {
         <main :id="CVLayoutId" class="mx-auto content w-prose px-4 py-1 rounded-md pt-12 <sm:w-full <sm:text-sm">
             <slot />
         </main>
-        <footer class="h-12 mt-20 flex justify-center items-center bg-white dark:bg-black w-full border-t border-gray-100 dark:border-gray-800">
-            <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" rel="noopener" class="dark:text-white ">CC BY-NC-SA 4.0</a>
+        <footer class="h-12 mt-20 flex justify-center flex-wrap items-center bg-white dark:bg-black w-full border-t border-gray-100 dark:border-gray-800">
+            <div class="w-full flex justify-center items-center">
+                <a  href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" rel="noopener" class="dark:text-white ">CC BY-NC-SA 4.0</a>
             <p class="text-sm text-center ml-2">{{ $t('system.footer.intro') }}</p>
+            </div>
+            <a  :href="countAPI() || '#'" class="mb-2 text-xs dark:text-white" target="_blank" rel="noopener" >{{ info || '' }}</a>
         </footer>
     </div>
 </template>

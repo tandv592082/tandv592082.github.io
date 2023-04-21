@@ -1,5 +1,10 @@
 {
-  "private": true,
+  "name": "curriculum-vitae-page",
+  "version": "1.2.0",
+  "repository": "https://github.com/tandv592082/tandv592082.github.io.git",
+  "description": "My curriculum vitae page. Build with Nuxt3",
+  "author": "Tân DV <tandv592082@gmail.com>",
+  "license": "MIT",
   "scripts": {
     "build": "nuxt build",
     "dev": "nuxt dev",
@@ -12,7 +17,6 @@
   "devDependencies": {
     "@headlessui/vue": "^1.7.10",
     "@nuxtjs/i18n": "^8.0.0-beta.10",
-    "@vite-pwa/nuxt": "^0.0.6",
     "gh-pages": "^5.0.0",
     "nuxt": "^3.2.2",
     "nuxt-icon": "^0.3.2",
@@ -23,5 +27,25 @@
     "countapi-js": "^1.0.2",
     "html2pdf.js": "0.9.0",
     "nuxt-windicss": "^2.6.0"
-  }
+  },
+  "keywords": [
+    "nuxt",
+    "nuxt3",
+    "curriculum vitae",
+    "cv",
+    "github page",
+    "tailwind",
+    "i18n",
+    "vue3",
+    "typescript",
+    "windicss",
+    "nuxt-windicss",
+    "html2pdf",
+    "darkmode",
+    "download",
+    "gh-pages",
+    "headlessui",
+    "nuxt-icon",
+    "count-api"
+  ]
 }
